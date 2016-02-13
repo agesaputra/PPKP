@@ -1,3 +1,13 @@
 # PPKPK
+<!DOCTYPE html>
+<html>
+<body>
 
-<h3>selamat datang indonesia</h3>
+<form>
+  First name:<br>
+  <input type="text" name="firstname">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname">
+</form>
+
