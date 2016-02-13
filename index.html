@@ -12,19 +12,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="navbar.css" rel="stylesheet">
-        
+        <link href="../bootstrap/css/style.css" rel="stylesheet">
 
         <!-- Static navbar -->
-        <div class="navbar navbar-default navbar-inverse" role="navigation">
+        <div class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+
         <form class="navbar-form navbar-right" role="search">
+
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="Search">
             </div>
                 <button type="submit" class="btn btn-default navbar-btn btn-primary">Submit</button>
         </form>
-        <a href="https://www.facebook.com" class="navbar-btn btn-primary btn pull-right">LogIn Admin</a>
+
+
         <div class="container-fluid">
-            
             <!--header saat mobile version-->
             <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -38,8 +41,9 @@
 
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
+              <li><a href="home.html">Home</a></li>
+              <li class="navbar-right"><a href="login.html">LogIn</a></li>
+              <li><a href="about.html">About</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Job Fair <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
@@ -53,15 +57,114 @@
         </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
         </div>
-
+        </div>
     </head>
+    </br>
+    </br>
+    </br>
+    </br>
+
     <body>
+
+<div id="slideshow">
+    <img src="../bootstrap/img/1.jpg" alt="Keterangan Gambar" title="Judul Gambar" />
+    <img src="../bootstrap/img/2.jpg" alt="Keterangan Gambar" title="Judul Gambar" />
+    <img src="../bootstrap/img/3.jpg" alt="Keterangan Gambar" title="Judul Gambar" />
+</div>
+
+
+
+       <div class="container">
+    <div class="jumbotron">
+        <h1>Belajar Membuat Website</h1>
+        <p>Internet adalah cara paling efektif untuk berbagi dan menyebarluaskan ilmu.  Di <a href="http://www.ayayank.com" target="_blank">ayayank.com</a> anda bisa menemukan artikel-artikel menarik seputar pemrograman dasar juga contoh-contoh pemrograman web dengan PHP, HTML, CSS, Javascript dan framework seperti Bootstrap</p>
+        <p><a href="#LINK" target="_blank" class="btn btn-success btn-lg">Selengkapnya..</a></p>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-2">
+            <h2>HTML</h2>
+            <p>HTML adalah bahasa pemrograman dasar untuk membuat sebuah website.  HTML wajib dipelajari jika anda ingin belajar web, baik itu desain web ataupun pemrograman web secara menyeluruh</p>
+            <p><a href="#LINK" target="_blank" class="btn btn-success">Selengkapnya &raquo;</a></p>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2">
+            <h2>CSS</h2>
+            <p>CSS adalah salah satu cara untuk meng-kostumasi tampilan web agar tak terkesan monoton sehingga menarik bagi pembaca dan pengunjung website kita. Sebagai seorang desainer web, CSS wajib dipelajari dan dikuasai.</p>
+            <p><a href="#LINK" target="_blank" class="btn btn-success">Selengkapnya &raquo;</a></p>
+        </div>
+        <div class="clearfix visible-sm-block"></div>
+        <div class="col-sm-6 col-md-4 col-lg-2">
+            <h2>Bootstrap</h2>
+            <p>Bootstrap adalah sebuah framework siap pakai yang terdiri dari kumpulan styling CSS, fungsi Javascript, dan Jquery.  Anda dapat mendesain website dengan lebih terorganisir dan mudah menggunakan framework Bootstrap.  Bootstrap memberikan kemudahan desain, dengan upaya yang lebih sedikit karena memiliki banyak fungsi umum yang siap pakai untuk desain web anda.</p>
+            <p><a href="#LINK" target="_blank" class="btn btn-success">Seengkapnya &raquo;</a></p>
+        </div>
+        <div class="clearfix visible-md-block"></div>
+        <div class="col-sm-6 col-md-4 col-lg-2">
+            <h2>Lain-lain</h2>
+            <p>Temukan Pula banyak informasi bermanfaat lainnya di Ayayank.com, Anda juga dapat berbagi dan berpartisipasi dalam kolom komentar yang disediakan.</p>
+            <p><a href="#LINK" target="_blank" class="btn btn-success">Selengkapnya &raquo;</a></p>
+        </div>
+        <div class="clearfix visible-sm-block"></div>
+        <div class="col-sm-6 col-md-4 col-lg-2">
+            <h2>Contoh Program</h2>
+            <p>Silakan pelajari contoh-contoh program yang dijelaskan dalam blog ini.  Anda tinggal memperhatikan dan mempraktekan agar kemampuan dalam pemrograman meningkat</p>
+            <p><a href="#LINK" target="_blank" class="btn btn-success">Selengkapnya &raquo;</a></p>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-2">
+            <h2>Referensi</h2>
+            <p>Semoga ayayank.com bisa menjadi referensi bagi kawan-kawan yang senang dengan pemrograman ataupun ingin belajar tentang web dan programming.</p>
+            <p><a href="#LINK" target="_blank" class="btn btn-success">Kunjungi Ayayank &raquo;</a></p>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-12">
+            <footer>
+                <p>© Ayayank.com </p>
+            </footer>
+        </div>
+    </div>
+
+
         <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src = "../bootstrap/js/bootstrap.js"></script>
-    </body>
+
+        <script type="text/javascript" src="http://static.tumblr.com/dxr7fsd/Wvmmpdd8c/jquery-1.2.6.min.js"></script>
+        <script type="text/javascript">
+
+        function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+
+    if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
+
+    // use this to pull the images in the order they appear in the markup
+    var $next =  $active.next().length ? $active.next()
+        : $('#slideshow IMG:first');
+
+    // uncomment the 3 lines below to pull the images in random order
+    
+    // var $sibs  = $active.siblings();
+    // var rndNum = Math.floor(Math.random() * $sibs.length );
+    // var $next  = $( $sibs[ rndNum ] );
+
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000 /* << Atur Kecepatan lebih menurun lebih cepat !*/, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 2000 );
+});
+</script>
+
     <div class="navbar navbar-inverse navbar-fixed-bottom">
         <div class="container">
             <p class="navbar-text pull-left">&#169; Copyright by MANPRO SUCCESS</a></p>
             <a href="https://www.facebook.com" class="navbar-btn btn-primary btn pull-right">Share On Facebook ?</a>
+        </div>
         </div>
 </html>
