@@ -1,19 +1,10 @@
-<?php
-$host = "localhost";
-$user = "root";
-$name = "ppkpk";
-$pass ="";
-$conn = mysql_connect('localhost','root',''); 
+<?php 
+	//buat koneksi ke databasenya
+	$server = "localhost";
+	$username = "root";
+	$password = "";
+	$database = 'ppkpk';
 
-if ($conn) {
-	$buka = mysql_select_db ($name);
-	if (!$buka) {
-		die ("Database tidak dapat dibuka");	
-	}
-} else {
-	die ("Server MySQL tidak terhubung");	
-}
-
-
-    
-?>
+	mysql_connect($server, $username, $password) or die("gagal terkoneksi ke server");
+	mysql_select_db($database) or die("gagal terkoneksi ke database");
+ ?>
