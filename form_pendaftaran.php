@@ -27,7 +27,7 @@
 
         <!-- You only need this form and the form-labels-on-top.css -->
 
-        <form class="form-labels-on-top" method="post" action="#">
+        <form class="form-labels-on-top" method="post" action="addpendaftaran.php" >
 
             <div class="form-title-row">
                 <h1>Form Pendaftaran Job Fair</h1>
@@ -35,38 +35,74 @@
 
             <div class="form-row">
                 <label>
-                    <span>Nama Panjang</span>
-                    <input type="text" name="name">
+                    <span>Nama Peserta</span>
+                    <input type="text" name="nama_peserta">
                 </label>
             </div>
 
             <div class="form-row">
                 <label>
                     <span>Asal Kampus</span>
-                    <input type="text" name="text">
+                    <input type="text" name="asal_kampus">
                 </label>
             </div>
 
-						<div class="form-row">
+            <div class="form-row">
+                <label>
+                    <span>Pendidikan Terakhir</span>
+                    <input type="text" name="pendidikan_terakhir">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Nomor Telepon</span>
+                    <input type="text" name="no_hp">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>E-mail</span>
+                    <input type="email" name="email">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label><span>Jenis Kelamin</span></label>
+                <div class="form-radio-buttons">
+
+                    <div>
+                        <label>
+                            <input type="radio" name="jkl" value="Laki-laki">
+                            <span>Laki-laki</span>
+                        </label>
+                    </div>
+
+                    <div>
+                        <label>
+                            <input type="radio" name="jkl" value="Perempuan">
+                            <span>Perempuan</span>
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+			<div class="form-row">
                 <label>
                     <span>Jurusan</span>
-                    <input type="email" name="email">
+                    <input type="text" name="jurusan">
                 </label>
             </div>
 
 						<div class="form-row">
                 <label>
                     <span>IPK</span>
-                    <input type="text" name="text">
+                    <input type="text" name="ipk">
                 </label>
             </div>
 
-						<div class="form-row">
-								<label>
-										<span>EMAIL</span>
-										<input type="email" name="email">
-								</label>
-						</div>
 
 
 
@@ -76,14 +112,14 @@
 
                     <div>
                         <label>
-                            <input type="radio" name="radio">
+                            <input type="radio" name="pengalaman_kerja" value="YA">
                             <span>YA</span>
                         </label>
                     </div>
 
                     <div>
                         <label>
-                            <input type="radio" name="radio">
+                            <input type="radio" name="pengalaman_kerja" value="TIDAK">
                             <span>TIDAK</span>
                         </label>
                     </div>
@@ -102,3 +138,4 @@
 </body>
 
 </html>
+
